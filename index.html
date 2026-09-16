@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Immortal Light — Alin Dragoș</title>
-<meta name="description" content="The Immortal Light by Alin Dragoș — the essence of the divine teaching through all the world's religions. Eight chapters, seven pillars, five revelations. In English and Romanian.">
+<meta name="description" content="The Immortal Light by Alin Dragoș — the essence of the divine teaching through all the world's religions. Eight chapters, seven pillars, and The Teacher's Edition: 55 parables retold from the Upanishads, the Gospels, Rumi, the Talmud, Zhuangzi and more. In English and Romanian.">
 <meta name="author" content="Alin Dragoș">
 <meta name="theme-color" content="#0B0918">
 <link rel="canonical" href="https://immortallight.app/">
@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="The Immortal Light">
 <meta property="og:url" content="https://immortallight.app/">
 <meta property="og:title" content="The Immortal Light — Alin Dragoș">
-<meta property="og:description" content="Eleven traditions. Three thousand years. One message that survives every translation.">
+<meta property="og:description" content="Eleven traditions. Three thousand years. One message that survives every translation — and 55 parables that carry it.">
 <meta property="og:image" content="https://immortallight.app/cover.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1800">
@@ -23,7 +23,7 @@
 <meta property="og:locale:alternate" content="ro_RO">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Immortal Light — Alin Dragoș">
-<meta name="twitter:description" content="Eleven traditions. Three thousand years. One message that survives every translation.">
+<meta name="twitter:description" content="Eleven traditions. Three thousand years. One message that survives every translation — and 55 parables that carry it.">
 <meta name="twitter:image" content="https://immortallight.app/cover.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
@@ -62,6 +62,46 @@
  ],
  "description": "The essence of the divine teaching through all the world's religions — eight chapters on God, love, suffering, consciousness, death, practice and the inner light.",
  "workExample": [
+  {
+   "@type": "Book",
+   "bookEdition": "The Teacher's Edition, English",
+   "name": "The Immortal Light — The Teacher's Edition",
+   "inLanguage": "en",
+   "bookFormat": "https://schema.org/EBook",
+   "numberOfPages": 210,
+   "author": {
+    "@type": "Person",
+    "name": "Alin Dragoș"
+   },
+   "url": "https://www.etsy.com/listing/4576720118",
+   "offers": {
+    "@type": "Offer",
+    "price": "18.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.etsy.com/listing/4576720118"
+   }
+  },
+  {
+   "@type": "Book",
+   "bookEdition": "Ediția Învățătorului, română",
+   "name": "Lumina Nemuritoare — Ediția Învățătorului",
+   "inLanguage": "ro",
+   "bookFormat": "https://schema.org/EBook",
+   "numberOfPages": 194,
+   "author": {
+    "@type": "Person",
+    "name": "Alin Dragoș"
+   },
+   "url": "https://www.etsy.com/listing/4576705153",
+   "offers": {
+    "@type": "Offer",
+    "price": "18.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.etsy.com/listing/4576705153"
+   }
+  },
   {
    "@type": "Book",
    "bookEdition": "English edition",
@@ -341,6 +381,29 @@ h2{
   .author-grid{grid-template-columns:1fr;gap:1.4rem;justify-items:start}
 }
 
+/* ---------- the teacher's edition ---------- */
+.teachers{background:linear-gradient(180deg,rgba(30,24,68,.55),rgba(11,9,24,0))}
+.teachers-grid{display:grid;grid-template-columns:minmax(0,18rem) minmax(0,1fr);gap:3rem;align-items:center}
+.teachers-cover{width:100%;height:auto;display:block;border:1px solid rgba(201,163,77,.35);
+  box-shadow:0 1.4rem 3rem rgba(0,0,0,.45)}
+.teachers h2{margin-top:.2rem}
+.teachers-lead{color:var(--ivory);font-size:1.12rem;line-height:1.66;margin:0 0 1.4rem}
+.teachers-stats{display:flex;gap:2.4rem;flex-wrap:wrap;margin:0 0 1.6rem;padding:1rem 0;
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.teachers-stat b{display:block;font-family:var(--display);font-weight:600;font-size:1.5rem;color:var(--gold-lit);line-height:1.1}
+.teachers-stat span{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ivory-dim)}
+.teachers-samples{list-style:none;margin:0 0 1.8rem;padding:0}
+.teachers-samples li{padding:.55rem 0;border-bottom:1px solid rgba(201,163,77,.14)}
+.teachers-samples em{font-family:var(--voice);font-style:italic;font-size:1.06rem;color:var(--ivory);display:block}
+.teachers-samples small{font-size:.8rem;color:var(--ivory-dim);letter-spacing:.02em}
+.teachers-actions{display:flex;gap:.9rem;flex-wrap:wrap}
+.teachers-note{margin:1.1rem 0 0;font-size:.86rem;color:var(--ivory-dim)}
+@media (max-width:760px){
+  .teachers-grid{grid-template-columns:1fr;gap:2rem}
+  .teachers-cover{max-width:15rem;margin:0 auto}
+  .teachers-stats{gap:1.6rem}
+}
+
 /* ---------- book / formats ---------- */
 .format-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem}
 .format{
@@ -378,7 +441,7 @@ footer a:hover{color:var(--gold-lit)}
 
 <header class="site-head">
   <a class="wordmark" href="#top" data-ro="LUMINA NEMURITOARE">THE IMMORTAL LIGHT</a>
-  <nav class="site-nav"><a href="#premise" data-ro="Premisa">The premise</a><a href="#chapters" data-ro="Capitole">Chapters</a><a href="#passage" data-ro="Un fragment">A passage</a><a href="#pillars" data-ro="Șapte piloni">Seven pillars</a><a href="#book" data-ro="Cartea">The book</a></nav>
+  <nav class="site-nav"><a href="#premise" data-ro="Premisa">The premise</a><a href="#chapters" data-ro="Capitole">Chapters</a><a href="#passage" data-ro="Un fragment">A passage</a><a href="#pillars" data-ro="Șapte piloni">Seven pillars</a><a href="#teachers" data-ro="Pildele">The parables</a><a href="#book" data-ro="Cartea">The book</a></nav>
   <div class="lang-toggle" role="group" aria-label="Language">
     <button type="button" data-lang="en" aria-pressed="true">EN</button>
     <button type="button" data-lang="ro" aria-pressed="false">RO</button>
@@ -395,7 +458,7 @@ footer a:hover{color:var(--gold-lit)}
       <p class="hero-sub" data-ro="Esența Învățăturii Divine prin Toate Religiile Lumii">The Essence of the Divine Teaching Through All the World’s Religions</p>
       <p class="hero-thesis" data-ro="Unsprezece tradiții. Trei mii de ani. Un mesaj care supraviețuiește oricărei traduceri.">Eleven traditions. Three thousand years. One message that survives every translation.</p>
       <div class="hero-actions">
-        <a class="btn" href="#book" data-ro="Ia cartea">Get the book</a>
+        <a class="btn" href="#teachers" data-ro="Ia cartea">Get the book</a>
         <a class="btn btn--quiet" href="#passage" data-ro="Citește un fragment">Read a passage</a>
       </div>
     </div>
@@ -586,9 +649,34 @@ footer a:hover{color:var(--gold-lit)}
     </div>
   </section>
 
+  <section id="teachers" class="teachers">
+    <div class="wrap">
+      <div class="teachers-grid">
+        <div>
+          <img class="teachers-cover" src="/cover-teachers.png"
+               data-ro-src="/cover-teachers-ro.png" width="660" height="990"
+               alt="The Immortal Light — The Teacher&#39;s Edition"
+               data-ro-alt="Lumina Nemuritoare — Ediția Învățătorului" loading="lazy">
+        </div>
+        <div>
+          <p class="eyebrow" data-ro="A doua carte">The second book</p>
+          <h2 data-ro="Ediția Învățătorului">The Teacher’s Edition</h2>
+          <p class="teachers-lead" data-ro="Aceleași opt teme — și lângă fiecare, o pildă din tradiția care vorbește: repovestită întreagă, apoi urmată de ceea ce știe ea și argumentul nu poate spune.">The same eight themes — and beside each one, a parable from the tradition that is speaking: retold in full, then followed by what the parable knows and an argument cannot say.</p>
+          <div class="teachers-stats"><div class="teachers-stat"><b>55</b><span data-ro="de pilde">parables</span></div><div class="teachers-stat"><b>210</b><span data-ro="de pagini">pages</span></div><div class="teachers-stat"><b>13</b><span data-ro="tradiții">traditions</span></div></div>
+          <ul class="teachers-samples"><li><em data-ro="Pilda sării în apă">The salt in the water</em><small data-ro="Chandogya Upanișada, cartea a șasea">Chandogya Upanishad, Book Six</small></li><li><em data-ro="Pilda ulciorului cu untdelemn">The jar of oil</em><small data-ro="Talmudul babilonian, Șabat 21b">Babylonian Talmud, Shabbat 21b</small></li><li><em data-ro="Pilda lui Zhuangzi bătând în doagă">Zhuangzi drumming on the tub</em><small data-ro="Zhuangzi, capitolul 18">Zhuangzi, chapter 18</small></li></ul>
+          <div class="teachers-actions">
+            <a class="btn" href="https://www.etsy.com/listing/4576720118" rel="noopener" target="_blank" data-ro="Ediția engleză">English edition</a>
+            <a class="btn btn--quiet" href="https://www.etsy.com/listing/4576705153" rel="noopener" target="_blank" data-ro="Ediția română">Romanian edition</a>
+          </div>
+          <p class="teachers-note" data-ro="Un PDF de tipărit, livrat în clipa în care îl cumperi. Fiecare izvor e numit, iar lista completă a pildelor și a surselor lor încheie cartea.">A printable PDF, delivered the moment you buy it. Every source is named, and the full list of the parables and where they come from closes the book.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="book">
     <div class="wrap">
-      <p class="eyebrow" data-ro="Cartea">The book</p>
+      <p class="eyebrow" data-ro="Cartea întâi">The first book</p>
       <h2 data-ro="Patru feluri de a o citi">Four ways to read it</h2>
       <div class="format-grid"><article class="format" data-format="paperback">
       <h3 data-ro="Carte tipărită">Paperback</h3>
@@ -611,7 +699,7 @@ footer a:hover{color:var(--gold-lit)}
       <p class="format-note" data-ro="Rândurile din această pagină, așezate pentru perete.">The lines from this page, set for the wall.</p>
       <a class="format-cta" href="#" data-link="prints" data-ro="Vezi ediția">See the edition</a>
     </article></div>
-      <p class="editions" data-ro="Publicată în engleză și în română. Ambele ediții au același text, aceeași tipografie și aceeași copertă.">Published in English and in Romanian. Both editions carry the same text, the same typography and the same cover.</p>
+      <p class="editions" data-ro="În engleză și în română, în pregătire. Ediția Învățătorului de mai sus e cea pe care o poți citi diseară.">In English and in Romanian, in preparation. The Teacher’s Edition above is the one you can read tonight.</p>
     </div>
   </section>
 
@@ -662,6 +750,14 @@ function setLang(next){
   document.querySelectorAll("[data-ro]").forEach(function(el){
     if (!el.dataset.en) el.dataset.en = el.textContent;
     el.textContent = next === "ro" ? el.dataset.ro : el.dataset.en;
+  });
+  document.querySelectorAll("[data-ro-src]").forEach(function(el){
+    if (!el.dataset.enSrc) el.dataset.enSrc = el.getAttribute("src");
+    el.setAttribute("src", next === "ro" ? el.dataset.roSrc : el.dataset.enSrc);
+  });
+  document.querySelectorAll("[data-ro-alt]").forEach(function(el){
+    if (!el.dataset.enAlt) el.dataset.enAlt = el.getAttribute("alt");
+    el.setAttribute("alt", next === "ro" ? el.dataset.roAlt : el.dataset.enAlt);
   });
   document.querySelectorAll(".lang-toggle button").forEach(function(b){
     b.setAttribute("aria-pressed", String(b.dataset.lang === next));
